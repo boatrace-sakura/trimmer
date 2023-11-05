@@ -37,9 +37,9 @@ class Trimmer
     /**
      * @param  string  $name
      * @param  array   $arguments
-     * @return mixed
+     * @return string|null
      */
-    public function __call(string $name, array $arguments)
+    public function __call(string $name, array $arguments): ?string
     {
         return call_user_func_array([$this->trimmer, $name], $arguments);
     }
@@ -47,9 +47,9 @@ class Trimmer
     /**
      * @param  string  $name
      * @param  array   $arguments
-     * @return mixed
+     * @return string|null
      */
-    public static function __callStatic(string $name, array $arguments)
+    public static function __callStatic(string $name, array $arguments): ?string
     {
         return call_user_func_array([self::getInstance(), $name], $arguments);
     }
