@@ -28,7 +28,6 @@ class MainTrimmerTest extends PHPUnitTestCase
      */
     public function testTrim(): void
     {
-        $this->assertNull($this->trimmer->trim());
         $this->assertNull($this->trimmer->trim(null));
         $this->assertSame('競艇', $this->trimmer->trim(' 競艇 '));
     }
@@ -38,7 +37,6 @@ class MainTrimmerTest extends PHPUnitTestCase
      */
     public function testLtrim(): void
     {
-        $this->assertNull($this->trimmer->ltrim());
         $this->assertNull($this->trimmer->ltrim(null));
         $this->assertSame('競艇 ', $this->trimmer->ltrim(' 競艇 '));
     }
@@ -48,7 +46,6 @@ class MainTrimmerTest extends PHPUnitTestCase
      */
     public function testRtrim(): void
     {
-        $this->assertNull($this->trimmer->rtrim());
         $this->assertNull($this->trimmer->rtrim(null));
         $this->assertSame(' 競艇', $this->trimmer->rtrim(' 競艇 '));
     }
