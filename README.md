@@ -7,8 +7,8 @@
 [![License](https://poser.pugx.org/boatrace-sakura/trimmer/license)](https://packagist.org/packages/boatrace-sakura/trimmer)
 
 ## Installation
-```
-$ composer require boatrace-sakura/trimmer
+```bash
+composer require boatrace-sakura/trimmer
 ```
 
 ## Usage
