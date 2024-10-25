@@ -13,11 +13,6 @@ use DI\ContainerBuilder;
 class Trimmer
 {
     /**
-     * @var \Boatrace\Sakura\MainTrimmer
-     */
-    protected $trimmer;
-
-    /**
      * @var \Boatrace\Sakura\Trimmer
      */
     protected static $instance;
@@ -31,10 +26,7 @@ class Trimmer
      * @param  \Boatrace\Sakura\MainTrimmer  $trimmer
      * @return void
      */
-    public function __construct(MainTrimmer $trimmer)
-    {
-        $this->trimmer = $trimmer;
-    }
+    public function __construct(protected MainTrimmer $trimmer){}
 
     /**
      * @param  string  $name
