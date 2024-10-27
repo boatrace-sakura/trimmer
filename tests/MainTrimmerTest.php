@@ -15,7 +15,7 @@ class MainTrimmerTest extends PHPUnitTestCase
     /**
      * @var \Boatrace\Sakura\MainTrimmer
      */
-    protected $trimmer;
+    protected MainTrimmer $trimmer;
 
     /**
      * @return void

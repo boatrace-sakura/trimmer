@@ -15,12 +15,12 @@ class Trimmer
     /**
      * @var \Boatrace\Sakura\Trimmer
      */
-    protected static $instance;
+    protected static Trimmer $instance;
 
     /**
      * @var \DI\Container
      */
-    protected static $container;
+    protected static Container $container;
 
     /**
      * @param  \Boatrace\Sakura\MainTrimmer  $trimmer
